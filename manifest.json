@@ -1,0 +1,16 @@
+{
+  "name": "Aplikasi CRUD PWA",
+  "short_name": "Aplikasi Scracth",
+  "start_url": "http://localhost/crud/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "writable/speedometer.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

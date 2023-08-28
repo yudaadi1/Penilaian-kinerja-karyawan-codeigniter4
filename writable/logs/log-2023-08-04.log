@@ -1,0 +1,1158 @@
+INFO - 2023-08-04 07:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:39:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:40:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 07:42:15 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'user.NIP' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Admin.php(149): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Admin->add()
+#9 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-04 07:42:15 --> Duplicate entry '2147483647' for key 'user.NIP'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (1691134935.3039, \'Sri Surjati, SS., M. Si\', \'197001131997032003\', \'jombang\', \'827ccb0eea8a706c4c34a16891f84e7b\', \'2\', \'1690802229\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (1691134935.3039, \'Sri Surjati, SS., M. Si\', \'197001131997032003\', \'jombang\', \'827ccb0eea8a706c4c34a16891f84e7b\', \'2\', \'1690802229\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (1691134935.3039, \'Sri Surjati, SS., M. Si\', \'197001131997032003\', \'jombang\', \'827ccb0eea8a706c4c34a16891f84e7b\', \'2\', \'1690802229\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (:id:, :nama:, :nip:, :alamat:, :password:, :id_level:, :id_jabatan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(149): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->add()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 07:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 07:42:38 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'user.NIP' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Admin.php(149): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Admin->add()
+#9 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-04 07:42:38 --> Duplicate entry '2147483647' for key 'user.NIP'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (1691134958.1305, \'Sri Surjati, SS., M. Si\', \'197001131997032003\', \'jombang\', \'827ccb0eea8a706c4c34a16891f84e7b\', \'2\', \'1690802229\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (1691134958.1305, \'Sri Surjati, SS., M. Si\', \'197001131997032003\', \'jombang\', \'827ccb0eea8a706c4c34a16891f84e7b\', \'2\', \'1690802229\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (1691134958.1305, \'Sri Surjati, SS., M. Si\', \'197001131997032003\', \'jombang\', \'827ccb0eea8a706c4c34a16891f84e7b\', \'2\', \'1690802229\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (:id:, :nama:, :nip:, :alamat:, :password:, :id_level:, :id_jabatan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(149): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->add()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 07:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 07:43:59 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'user.NIP' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Admin.php(149): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Admin->add()
+#9 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-04 07:43:59 --> Duplicate entry '2147483647' for key 'user.NIP'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (1691135039.3756, \'Sri Surjati, SS., M. Si\', \'197001131997032003\', \'jombang\', \'827ccb0eea8a706c4c34a16891f84e7b\', \'2\', \'1690802229\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (1691135039.3756, \'Sri Surjati, SS., M. Si\', \'197001131997032003\', \'jombang\', \'827ccb0eea8a706c4c34a16891f84e7b\', \'2\', \'1690802229\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (1691135039.3756, \'Sri Surjati, SS., M. Si\', \'197001131997032003\', \'jombang\', \'827ccb0eea8a706c4c34a16891f84e7b\', \'2\', \'1690802229\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (:id:, :nama:, :nip:, :alamat:, :password:, :id_level:, :id_jabatan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(149): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->add()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 07:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 07:44:38 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'user.NIP' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Admin.php(149): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Admin->add()
+#9 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-04 07:44:38 --> Duplicate entry '2147483647' for key 'user.NIP'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (1691135078.7181, \'Sri Surjati, SS., M. Si\', \'197001131997032003\', \'jombang\', \'827ccb0eea8a706c4c34a16891f84e7b\', \'2\', \'1690802229\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (1691135078.7181, \'Sri Surjati, SS., M. Si\', \'197001131997032003\', \'jombang\', \'827ccb0eea8a706c4c34a16891f84e7b\', \'2\', \'1690802229\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (1691135078.7181, \'Sri Surjati, SS., M. Si\', \'197001131997032003\', \'jombang\', \'827ccb0eea8a706c4c34a16891f84e7b\', \'2\', \'1690802229\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user` (`id`, `nama`, `nip`, `alamat`, `password`, `id_level`, `id_jabatan`) VALUES (:id:, :nama:, :nip:, :alamat:, :password:, :id_level:, :id_jabatan:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(149): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->add()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 07:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:45:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 07:46:24 --> mysqli_sql_exception: Unknown column 'desk' in 'field list' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ja...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ja...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ja...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ja...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Admin.php(170): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Admin->savejbtn()
+#9 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-04 07:46:24 --> Unknown column 'desk' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `jabatan` (`id`, `jabatan`, `desk`) VALUES (1691135184.9443, \'Kepala Bidang Kelembagaan dan Pengawasan Koperasi\', \'example\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `jabatan` (`id`, `jabatan`, `desk`) VALUES (1691135184.9443, \'Kepala Bidang Kelembagaan dan Pengawasan Koperasi\', \'example\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `jabatan` (`id`, `jabatan`, `desk`) VALUES (1691135184.9443, \'Kepala Bidang Kelembagaan dan Pengawasan Koperasi\', \'example\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jabatan` (`id`, `jabatan`, `desk`) VALUES (:id:, :jabatan:, :desk:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(170): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->savejbtn()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 07:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 07:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:00:14 --> date() expects at most 2 arguments, 3 given
+in APPPATH\Controllers\Pegawai.php on line 94.
+ 1 APPPATH\Controllers\Pegawai.php(94): date('c255e0bbb4d9ec6ecfa3b81218b9fc37', 0, 10)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 08:01:22 --> mysqli_sql_exception: Duplicate entry '0' for key 'kinerja.PRIMARY' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ki...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ki...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ki...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ki...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Pegawai.php(110): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\app\Controllers\Pegawai.php(103): App\Controllers\Pegawai->saveKinerja(Array)
+#9 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+#10 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#11 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-04 08:01:22 --> Duplicate entry '0' for key 'kinerja.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'da39fef3e65a7290206a589d1b4f1468\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691136082.5845, 1691136082.5845, \'1691134890\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'da39fef3e65a7290206a589d1b4f1468\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691136082.5845, 1691136082.5845, \'1691134890\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'da39fef3e65a7290206a589d1b4f1468\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691136082.5845, 1691136082.5845, \'1691134890\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (:id:, :no:, :sasaran:, :indikator:, :id_target:, :id_realisasi:, :id_user:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pegawai.php(110): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Pegawai.php(103): App\Controllers\Pegawai->saveKinerja([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:07:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 08:10:27 --> mysqli_sql_exception: Duplicate entry '0' for key 'kinerja.PRIMARY' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ki...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ki...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ki...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ki...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Pegawai.php(110): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\app\Controllers\Pegawai.php(103): App\Controllers\Pegawai->saveKinerja(Array)
+#9 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+#10 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#11 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-04 08:10:27 --> Duplicate entry '0' for key 'kinerja.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'ad3120db9f046560de2443206beef3dd\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691136627.6943, 1691136627.6943, \'1691134890\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'ad3120db9f046560de2443206beef3dd\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691136627.6943, 1691136627.6943, \'1691134890\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'ad3120db9f046560de2443206beef3dd\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691136627.6943, 1691136627.6943, \'1691134890\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (:id:, :no:, :sasaran:, :indikator:, :id_target:, :id_realisasi:, :id_user:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pegawai.php(110): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Pegawai.php(103): App\Controllers\Pegawai->saveKinerja([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:17:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:20:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:25:41 --> microtime() expects at most 1 argument, 3 given
+in APPPATH\Controllers\Pegawai.php on line 94.
+ 1 APPPATH\Controllers\Pegawai.php(94): microtime('aac52d1092a058dc7ea1', 0, 10)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:26:07 --> microtime() expects at most 1 argument, 3 given
+in APPPATH\Controllers\Pegawai.php on line 94.
+ 1 APPPATH\Controllers\Pegawai.php(94): microtime('òKaÂ{ß_Ýªd;¶ÂE°‹BELÑiµÖ€òK¦#M`±¬$®!R½Û»£_–P¾RsY
+Ó¸AEþÀxž—?ÈÉÊû	0ˆúJ…{nNaE”>Ý˜ChÛoß¯f
+I£ùå7ÜñÜf¦Wzˆè-¥|e–ßpR%«èç!8ÛÁþqøÒ¾Å**fÝZÄ¯î^ÉåP>ð†£¸!mÃ
+òG£Ï`þcïÞô„î—ñ/õ¬WÌPuƒuf&V£Ç£EÝ$ç6°þ!-ð', 0, 10)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:29:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 08:30:38 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'kinerja.PRIMARY' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ki...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ki...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ki...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ki...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Pegawai.php(111): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\app\Controllers\Pegawai.php(104): App\Controllers\Pegawai->saveKinerja(Array)
+#9 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+#10 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#11 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-04 08:30:38 --> Duplicate entry '2147483647' for key 'kinerja.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'169113489064ccb72e12fea9.98322842\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691137838.0401, 1691137838.0401, \'1691134890\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'169113489064ccb72e12fea9.98322842\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691137838.0401, 1691137838.0401, \'1691134890\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'169113489064ccb72e12fea9.98322842\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691137838.0401, 1691137838.0401, \'1691134890\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (:id:, :no:, :sasaran:, :indikator:, :id_target:, :id_realisasi:, :id_user:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pegawai.php(111): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Pegawai.php(104): App\Controllers\Pegawai->saveKinerja([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:31:42 --> time() expects exactly 0 arguments, 1 given
+in APPPATH\Controllers\Pegawai.php on line 94.
+ 1 APPPATH\Controllers\Pegawai.php(94): time(10)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:37:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 08:38:25 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'kinerja.PRIMARY' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ki...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ki...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ki...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ki...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Pegawai.php(107): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\app\Controllers\Pegawai.php(100): App\Controllers\Pegawai->saveKinerja(Array)
+#9 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+#10 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#11 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-04 08:38:25 --> Duplicate entry '2147483647' for key 'kinerja.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'3899534108\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138305.625, 1691138305.6611, \'1691134890\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'3899534108\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138305.625, 1691138305.6611, \'1691134890\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'3899534108\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138305.625, 1691138305.6611, \'1691134890\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (:id:, :no:, :sasaran:, :indikator:, :id_target:, :id_realisasi:, :id_user:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pegawai.php(107): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Pegawai.php(100): App\Controllers\Pegawai->saveKinerja([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:38:57 --> md5() expects at most 2 arguments, 4 given
+in APPPATH\Controllers\Pegawai.php on line 90.
+ 1 APPPATH\Controllers\Pegawai.php(90): md5(9424733019, 10, '0', 0)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:39:07 --> date() expects at most 2 arguments, 4 given
+in APPPATH\Controllers\Pegawai.php on line 90.
+ 1 APPPATH\Controllers\Pegawai.php(90): date(6475254866, 10, '0', 0)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:39:20 --> date() expects at most 2 arguments, 3 given
+in APPPATH\Controllers\Pegawai.php on line 90.
+ 1 APPPATH\Controllers\Pegawai.php(90): date(9471159889, 10, '0')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 08:39:26 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'kinerja.PRIMARY' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ki...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ki...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ki...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ki...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Pegawai.php(107): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\app\Controllers\Pegawai.php(100): App\Controllers\Pegawai->saveKinerja(Array)
+#9 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+#10 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#11 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-04 08:39:26 --> Duplicate entry '2147483647' for key 'kinerja.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'3006465608\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138366.4229, 1691138366.4437, \'1691134890\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'3006465608\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138366.4229, 1691138366.4437, \'1691134890\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'3006465608\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138366.4229, 1691138366.4437, \'1691134890\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (:id:, :no:, :sasaran:, :indikator:, :id_target:, :id_realisasi:, :id_user:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pegawai.php(107): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Pegawai.php(100): App\Controllers\Pegawai->saveKinerja([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 08:40:04 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'kinerja.PRIMARY' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ki...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ki...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ki...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ki...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Pegawai.php(107): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\app\Controllers\Pegawai.php(100): App\Controllers\Pegawai->saveKinerja(Array)
+#9 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+#10 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#11 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-04 08:40:04 --> Duplicate entry '2147483647' for key 'kinerja.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'7354733634\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138404.8779, 1691138404.9114, \'1691134890\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'7354733634\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138404.8779, 1691138404.9114, \'1691134890\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'7354733634\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138404.8779, 1691138404.9114, \'1691134890\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (:id:, :no:, :sasaran:, :indikator:, :id_target:, :id_realisasi:, :id_user:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pegawai.php(107): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Pegawai.php(100): App\Controllers\Pegawai->saveKinerja([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 08:40:11 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'kinerja.PRIMARY' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ki...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ki...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ki...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ki...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Pegawai.php(107): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\app\Controllers\Pegawai.php(100): App\Controllers\Pegawai->saveKinerja(Array)
+#9 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+#10 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#11 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-04 08:40:11 --> Duplicate entry '2147483647' for key 'kinerja.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'5033609706\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138411.9176, 1691138411.9616, \'1691134890\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'5033609706\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138411.9176, 1691138411.9616, \'1691134890\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'5033609706\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138411.9176, 1691138411.9616, \'1691134890\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (:id:, :no:, :sasaran:, :indikator:, :id_target:, :id_realisasi:, :id_user:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pegawai.php(107): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Pegawai.php(100): App\Controllers\Pegawai->saveKinerja([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:41:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:41:47 --> Cannot access offset of type string on string
+in APPPATH\Controllers\Pegawai.php on line 102.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:42:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 08:42:58 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'kinerja.PRIMARY' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ki...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ki...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ki...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ki...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Pegawai.php(109): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\app\Controllers\Pegawai.php(102): App\Controllers\Pegawai->saveKinerja(Array)
+#9 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+#10 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#11 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-04 08:42:58 --> Duplicate entry '2147483647' for key 'kinerja.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'12345678911\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138578.0936, 1691138578.1269, \'1691134890\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'12345678911\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138578.0936, 1691138578.1269, \'1691134890\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'12345678911\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138578.0936, 1691138578.1269, \'1691134890\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (:id:, :no:, :sasaran:, :indikator:, :id_target:, :id_realisasi:, :id_user:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pegawai.php(109): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Pegawai.php(102): App\Controllers\Pegawai->saveKinerja([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:44:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:46:04 --> str_pad() expects at most 4 arguments, 5 given
+in APPPATH\Controllers\Pegawai.php on line 92.
+ 1 APPPATH\Controllers\Pegawai.php(92): str_pad('1691134890', 1, 10, '0', 0)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:46:18 --> syntax error, unexpected identifier "STR_PAD_LEFT", expecting ")"
+in APPPATH\Controllers\Pegawai.php on line 92.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Pegawai')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Pegawai')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Pegawai', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:48:02 --> uniqid() expects at most 2 arguments, 4 given
+in APPPATH\Controllers\Pegawai.php on line 88.
+ 1 APPPATH\Controllers\Pegawai.php(88): uniqid(3081953815, 10, '0', 0)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:48:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 08:48:23 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'kinerja.PRIMARY' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ki...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ki...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ki...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ki...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Pegawai.php(105): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\app\Controllers\Pegawai.php(98): App\Controllers\Pegawai->saveKinerja(Array)
+#9 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+#10 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#11 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-04 08:48:23 --> Duplicate entry '2147483647' for key 'kinerja.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'387275501964ccbb57b1e288.22386906\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138903.6901, 1691138903.7226, \'1691134890\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'387275501964ccbb57b1e288.22386906\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138903.6901, 1691138903.7226, \'1691134890\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'387275501964ccbb57b1e288.22386906\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138903.6901, 1691138903.7226, \'1691134890\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (:id:, :no:, :sasaran:, :indikator:, :id_target:, :id_realisasi:, :id_user:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pegawai.php(105): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Pegawai.php(98): App\Controllers\Pegawai->saveKinerja([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 08:48:32 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'kinerja.PRIMARY' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ki...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ki...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ki...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ki...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Pegawai.php(105): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\app\Controllers\Pegawai.php(98): App\Controllers\Pegawai->saveKinerja(Array)
+#9 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+#10 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#11 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-04 08:48:32 --> Duplicate entry '2147483647' for key 'kinerja.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'9049489802\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138912.3955, 1691138912.4394, \'1691134890\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'9049489802\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138912.3955, 1691138912.4394, \'1691134890\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (\'9049489802\', \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138912.3955, 1691138912.4394, \'1691134890\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (:id:, :no:, :sasaran:, :indikator:, :id_target:, :id_realisasi:, :id_user:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pegawai.php(105): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Pegawai.php(98): App\Controllers\Pegawai->saveKinerja([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-04 08:48:48 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'kinerja.PRIMARY' in C:\laragon\www\crud\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\crud\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ki...', 0)
+#1 C:\laragon\www\crud\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ki...')
+#2 C:\laragon\www\crud\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ki...')
+#3 C:\laragon\www\crud\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ki...', Array, false)
+#4 C:\laragon\www\crud\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\crud\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\crud\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\crud\app\Controllers\Pegawai.php(105): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\crud\app\Controllers\Pegawai.php(98): App\Controllers\Pegawai->saveKinerja(Array)
+#9 C:\laragon\www\crud\system\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+#10 C:\laragon\www\crud\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+#11 C:\laragon\www\crud\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\crud\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-04 08:48:48 --> Duplicate entry '2147483647' for key 'kinerja.PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (4786491310, \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138928.9072, 1691138928.9416, \'1691134890\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (4786491310, \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138928.9072, 1691138928.9416, \'1691134890\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (4786491310, \'1\', \'Meningkatnya Koperasi Berkinerja Baik\', \'Persentase Koperasi Berkinerja Baik\', 1691138928.9072, 1691138928.9416, \'1691134890\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kinerja` (`id`, `no`, `sasaran`, `indikator`, `id_target`, `id_realisasi`, `id_user`) VALUES (:id:, :no:, :sasaran:, :indikator:, :id_target:, :id_realisasi:, :id_user:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pegawai.php(105): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Pegawai.php(98): App\Controllers\Pegawai->saveKinerja([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:49:54 --> floor() expects exactly 1 argument, 2 given
+in APPPATH\Controllers\Pegawai.php on line 88.
+ 1 APPPATH\Controllers\Pegawai.php(88): floor(859, 15)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:50:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:54:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 08:55:03 --> Undefined variable $id_realisasi
+in APPPATH\Controllers\Pegawai.php on line 85.
+ 1 APPPATH\Controllers\Pegawai.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_realisasi', 'C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 08:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 08:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 09:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 09:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 09:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 09:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 09:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:35:12 --> Undefined variable $data
+in APPPATH\Views\pegawai\kurja.php on line 43.
+ 1 APPPATH\Views\pegawai\kurja.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(37): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:39:14 --> Undefined variable $i
+in APPPATH\Views\pegawai\kurja.php on line 43.
+ 1 APPPATH\Views\pegawai\kurja.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(37): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:39:55 --> Undefined variable $i
+in APPPATH\Views\pegawai\kurja.php on line 43.
+ 1 APPPATH\Views\pegawai\kurja.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(37): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:43:28 --> Undefined variable $i
+in APPPATH\Views\pegawai\kurja.php on line 43.
+ 1 APPPATH\Views\pegawai\kurja.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(37): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:44:32 --> Undefined variable $i
+in APPPATH\Views\pegawai\kurja.php on line 43.
+ 1 APPPATH\Views\pegawai\kurja.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(37): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:51:25 --> Undefined variable $data
+in APPPATH\Views\pegawai\kurja.php on line 44.
+ 1 APPPATH\Views\pegawai\kurja.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(38): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:52:19 --> Undefined variable $data
+in APPPATH\Views\pegawai\kurja.php on line 43.
+ 1 APPPATH\Views\pegawai\kurja.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(38): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:52:25 --> Undefined variable $data
+in APPPATH\Views\pegawai\kurja.php on line 43.
+ 1 APPPATH\Views\pegawai\kurja.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(38): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:53:03 --> Undefined variable $data
+in APPPATH\Views\pegawai\kurja.php on line 43.
+ 1 APPPATH\Views\pegawai\kurja.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(38): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:53:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:53:05 --> Undefined variable $data
+in APPPATH\Views\pegawai\kurja.php on line 43.
+ 1 APPPATH\Views\pegawai\kurja.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(38): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 11:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:53:13 --> Undefined variable $data
+in APPPATH\Views\pegawai\kurja.php on line 43.
+ 1 APPPATH\Views\pegawai\kurja.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php', 43)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(38): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:54:22 --> A non-numeric value encountered
+in APPPATH\Controllers\Pegawai.php on line 56.
+ 1 APPPATH\Controllers\Pegawai.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 11:55:34 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH\Views\pegawai\kurja.php on line 47.
+ 1 APPPATH\Views\pegawai\kurja.php(47): number_format('N/A', 2)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(69): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 11:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 13:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 14:06:01 --> Undefined array key "Ktribulan"
+in APPPATH\Controllers\Pegawai.php on line 62.
+ 1 APPPATH\Controllers\Pegawai.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Ktribulan"', 'C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 14:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 14:07:18 --> Undefined array key "Ktribulan"
+in APPPATH\Controllers\Pegawai.php on line 62.
+ 1 APPPATH\Controllers\Pegawai.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Ktribulan"', 'C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 14:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 14:07:59 --> Undefined array key "Ktribulan"
+in APPPATH\Controllers\Pegawai.php on line 62.
+ 1 APPPATH\Controllers\Pegawai.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Ktribulan"', 'C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 14:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 14:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 15:12:45 --> Undefined array key "Ktribulan_r"
+in APPPATH\Controllers\Pegawai.php on line 62.
+ 1 APPPATH\Controllers\Pegawai.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Ktribulan_r"', 'C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 15:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 15:13:03 --> Undefined array key "Ktribulan_r"
+in APPPATH\Controllers\Pegawai.php on line 62.
+ 1 APPPATH\Controllers\Pegawai.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Ktribulan_r"', 'C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 15:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 15:13:45 --> Undefined array key "Ktribulan_r"
+in APPPATH\Controllers\Pegawai.php on line 62.
+ 1 APPPATH\Controllers\Pegawai.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Ktribulan_r"', 'C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 15:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 15:16:59 --> Undefined array key "Ktribulan_realisasi"
+in APPPATH\Controllers\Pegawai.php on line 62.
+ 1 APPPATH\Controllers\Pegawai.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Ktribulan_realisasi"', 'C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 15:18:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 15:18:45 --> Undefined array key "ktribulan"
+in APPPATH\Views\pegawai\kurja.php on line 47.
+ 1 APPPATH\Views\pegawai\kurja.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ktribulan"', 'C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\crud\\app\\Views\\pegawai\\kurja.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pegawai/kurja', [], true)
+ 5 APPPATH\Controllers\Pegawai.php(78): view('pegawai/kurja', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 15:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:29:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:32:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 15:32:58 --> Undefined array key "ktribulan"
+in APPPATH\Controllers\Pegawai.php on line 112.
+ 1 APPPATH\Controllers\Pegawai.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ktribulan"', 'C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 15:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 15:34:22 --> Undefined array key "ktribulan"
+in APPPATH\Controllers\Pegawai.php on line 114.
+ 1 APPPATH\Controllers\Pegawai.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ktribulan"', 'C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 15:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 15:36:52 --> Undefined array key "ktribulan"
+in APPPATH\Controllers\Pegawai.php on line 128.
+ 1 APPPATH\Controllers\Pegawai.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ktribulan"', 'C:\\laragon\\www\\crud\\app\\Controllers\\Pegawai.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->savekurja()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 15:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:41:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-04 15:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-04 15:59:06 --> Cannot use object of type App\Models\Mkinerja as array
+in APPPATH\Controllers\Pegawai.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Pegawai->kurja()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pegawai))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-08-04 16:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
